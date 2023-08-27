@@ -12,6 +12,34 @@
             padding: 0;
         }
 
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+        }
+
+        .sidebar a {
+            padding: 20px;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #444;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
         header {
             background-color: #333;
             color: #fff;
@@ -31,11 +59,10 @@
 
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
+            padding: 20px;
         }
 
         .code-snippet {
@@ -50,35 +77,82 @@
             height: auto;
             border-radius: 50%;
         }
+
+        .category {
+            margin-bottom: 20px;
+        }
+
+        .category-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Professional Portfolio</h1>
-        <p>Experienced Software Engineer</p>
-    </header>
+    <div class="sidebar">
+        <a href="#about">About Me</a>
+        <a href="#code">Code Snippet</a>
+        <a href="#profile">Profile</a>
+        <div class="category">
+            <div class="category-title">Learning Journey</div>
+            <a href="#project1">Project 1</a>
+            <a href="#project2">Project 2</a>
+        </div>
+    </div>
 
-    <div class="container">
-        <h2>About Me</h2>
-        <p>I am a passionate and skilled software engineer with over 10 years of experience in developing high-quality software solutions. My expertise includes C++, Python, and web development technologies.</p>
+    <div class="content">
+        <header>
+            <h1>Welcome to My Professional Portfolio</h1>
+            <p>Experienced Software Engineer</p>
+        </header>
 
-        <h2>Code Snippet</h2>
-        <div class="code-snippet">
-            <pre>
-                <code>
-                    #include &lt;iostream&gt;
-                    using namespace std;
-
-                    int main() {
-                        cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
-                        return 0;
-                    }
-                </code>
-            </pre>
+        <div class="container" id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate and skilled software engineer with over 10 years of experience in developing high-quality software solutions. My expertise includes C++, Python, and web development technologies.</p>
         </div>
 
-        <h2>Profile</h2>
-        <img class="profile-img" src="https://via.placeholder.com/150" alt="Profile Picture">
+        <div class="container" id="code">
+            <h2>Code Snippet</h2>
+            <div class="code-snippet">
+                <pre>
+                    <code>
+                        #include &lt;iostream&gt;
+                        using namespace std;
+
+                        int main() {
+                            cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
+                            return 0;
+                        }
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="container" id="profile">
+            <h2>Profile</h2>
+            <img class="profile-img" src="https://via.placeholder.com/150" alt="Profile Picture">
+        </div>
+
+        <div class="container" id="project1">
+            <h2>Project 1</h2>
+            <p>Description of Project 1.</p>
+        </div>
+
+        <div class="container" id="project2">
+            <h2>Project 2</h2>
+            <p>Description of Project 2.</p>
+        </div>
+	<div class="container" id="data-structures-algorithms">
+    		<h2>Data Structures and Algorithms Library</h2>
+    		<p>
+        Welcome to my Data Structures and Algorithms library! Here, you can find a collection of common data structures and algorithms implemented in C++. 
+        This library is designed to help developers understand and use essential data structures and algorithms in their projects.
+    		</p>
+    		<p>
+        You can explore the source code for each data structure and algorithm in the GitHub repository linked below.
+    		</p>
+    <!--<a href="https://github.com/yourusername/data-structures-algorithms-library" target="_blank">View on GitHub</a>--!>
+</div>
     </div>
 </body>
 </html>
