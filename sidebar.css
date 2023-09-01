@@ -1,0 +1,50 @@
+/* iframe 내부 요소에 대한 스타일 정의 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* 카테고리 제목 스타일 */
+.category-title {
+    font-weight: bold;
+    margin: 8px 0;
+    padding: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* 메뉴 항목 스타일 */
+.sidebar-link {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-link:hover {
+    background-color: #333;
+    color: #fff;
+}
+/* 1단계 하위 메뉴 스타일 */
+.menu-level1 {
+    margin-left: 20px; /* 들여쓰기 */
+}
+
+/* 2단계 하위 메뉴 스타일 */
+.menu-level2 {
+    margin-left: 30px; /* 더 깊은 들여쓰기 */
+}
+
+/* 3단계 하위 메뉴 스타일 */
+.menu-level3 {
+    margin-left: 40px;
+}
+
+/* 4단계 하위 메뉴 스타일 */
+.menu-level4 {
+    margin-left: 50px;
+}
